@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Transações Bancárias</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="main__titulo">Transações Bancárias</h2>
+
+        <form class="main__formulario">
+            <div class="formulario__pessoa-selecionada">
+                <div class="pessoa-selecionada__campo">
+                    <p>Conta: </p><span class="campo__nome"></span>
+                </div>
+            </div>
+            <input type="number" placeholder="Valor" class="formulario__valor">
+            <select class="formulario__selecione-operacao">
+                <option class="selecione-operacao__operaçao-escolhida">Depositar</option>
+                <option class="selecione-operacao__operaçao-escolhida">Sacar</option>
+                <option class="selecione-operacao__operaçao-escolhida">Transferir</option>
+            </select>
+            <input type="submit" value="Operar" class="formulario__operar">
+            <span class="formulario__erro"></span>
+        </form>
+
+        <div class="clientes">
+            <div class="clientes__informacoes-cliente" id="cliente1">
+                <p class="informacoes-cliente__dado nome">Nome:</p>
+                <p class="informacoes-cliente__dado cpf">CPF:</p>
+                <p class="informacoes-cliente__dado agencia">N° da Agência:</p>
+                <p class="informacoes-cliente__dado saldo">Saldo: R$</p>
+            </div>
+
+            <div class="clientes__informacoes-cliente" id="cliente2">
+                <p class="informacoes-cliente__dado nome">Nome:</p>
+                <p class="informacoes-cliente__dado cpf">CPF:</p>
+                <p class="informacoes-cliente__dado agencia">N° da Agência:</p>
+                <p class="informacoes-cliente__dado saldo">Saldo: R$</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/Cliente.js"></script>
+    <script src="js/ContaCorrente.js"></script>
+    <script src="js/preencheClientes.js"></script>
+    <script src="js/selecionarClientes.js"></script>
+    <script src="js/verificaErros.js"></script>
+    <script src="js/operacaoBancaria.js"></script>
+</body>
+
+</html>
